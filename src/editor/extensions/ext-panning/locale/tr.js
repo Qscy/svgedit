@@ -1,8 +1,9 @@
 export default {
-  name: 'Kaydırma Aracı ',
+  name: "Kaydırma Aracı ",
   buttons: [
     {
-      title: 'Kaydırma'
-    }
-  ]
-}
+      title: "Kaydırma",
+      key: "[Space / mouse wheel + drag]",
+    },
+  ],
+};

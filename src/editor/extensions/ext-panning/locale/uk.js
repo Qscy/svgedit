@@ -1,8 +1,9 @@
 export default {
-  name: 'Розширення: Малювання',
+  name: "Розширення: Малювання",
   buttons: [
     {
-      title: 'Малювання'
-    }
-  ]
-}
+      title: "Малювання",
+      key: "[Space / mouse wheel + drag]",
+    },
+  ],
+};
