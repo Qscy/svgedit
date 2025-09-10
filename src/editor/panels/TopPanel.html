@@ -1,200 +1,200 @@
 <div id="tools_top">
   <div id="title_panel">
-    <p>untitled.svg</p>
+    <p>未命名.svg</p>
   </div> <!-- title panel -->
   <div id="editor_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_source" title="tools.tool_source" shortcut="U" src="source.svg"></se-button>
-    <se-button id="tool_wireframe" title="tools.wireframe_mode" shortcut="F" src="wireframe.svg"></se-button>
+    <se-button id="tool_source" title="编辑源码" shortcut="U" src="source.svg"></se-button>
+    <se-button id="tool_wireframe" title="线框模式" shortcut="F" src="wireframe.svg"></se-button>
   </div> <!-- editor_panel -->
   <div id="history_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_undo" title="tools.undo" shortcut="ctrl+Z" src="undo.svg" disabled></se-button>
-    <se-button id="tool_redo" title="tools.redo" shortcut="ctrl+Y" src="redo.svg" disabled></se-button>
+    <se-button id="tool_undo" title="撤销" shortcut="ctrl+Z" src="undo.svg" disabled></se-button>
+    <se-button id="tool_redo" title="重做" shortcut="ctrl+Y" src="redo.svg" disabled></se-button>
   </div> <!-- history_panel -->
   <!-- Buttons when a single element is selected -->
   <div class="selected_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_clone" title="tools.clone" shortcut="D" src="clone.svg"></se-button>
-    <se-button id="tool_delete" title="tools.del" shortcut="Delete/Backspace" src="delete.svg"></se-button>
+    <se-button id="tool_clone" title="克隆" shortcut="D" src="clone.svg"></se-button>
+    <se-button id="tool_delete" title="删除" shortcut="Delete/Backspace" src="delete.svg"></se-button>
   </div>
   <div class="selected_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_move_top" title="tools.move_top" shortcut="Ctrl+Shift+]" src="move_top.svg"></se-button>
-    <se-button id="tool_move_bottom" title="tools.move_bottom" shortcut="Ctrl+Shift+[" src="move_bottom.svg">
+    <se-button id="tool_move_top" title="移到顶层" shortcut="Ctrl+Shift+]" src="move_top.svg"></se-button>
+    <se-button id="tool_move_bottom" title="移到底层" shortcut="Ctrl+Shift+[" src="move_bottom.svg">
     </se-button>
   </div>
   <div class="selected_panel">
-    <se-button id="tool_topath" title="tools.to_path" src="to_path.svg"></se-button>
-    <se-button id="tool_reorient" title="tools.reorient_path" src="reorient.svg"></se-button>
-    <se-button id="tool_make_link" title="tools.make_link" src="globe_link.svg"></se-button>
+    <se-button id="tool_topath" title="转换为路径" src="to_path.svg"></se-button>
+    <se-button id="tool_reorient" title="调整路径" src="reorient.svg"></se-button>
+    <se-button id="tool_make_link" title="创建链接" src="globe_link.svg"></se-button>
   </div>
   <div class="selected_panel">
     <div class="tool_sep"></div>
-    <se-input id="elem_id" data-attr="id" size="10" label="properties.id_label" title="properties.id"></se-input>
+    <se-input id="elem_id" data-attr="id" size="10" label="ID" title="元素ID"></se-input>
   </div>
   <div class="selected_panel">
-    <se-input id="elem_class" data-attr="class" size="10" label="properties.class_label" title="properties.class">
+    <se-input id="elem_class" data-attr="class" size="10" label="类名" title="元素类名">
     </se-input>
-    <se-spin-input size="3" id="angle" min=-180 max=180 step=5 src="angle.svg" title="properties.angle">
+    <se-spin-input size="3" id="angle" min=-180 max=180 step=5 src="angle.svg" title="旋转角度">
     </se-spin-input>
-    <se-spin-input size="2" id="blur" min=0 max=100 step=5 src="blur.svg" title="properties.blur"></se-spin-input>
-    <se-list id="tool_position" title="tools.align_to_page" label="" width="22px" height="22px">
-      <se-list-item id="tool_posleft" value="l" title="tools.align_left" src="align_left.svg" img-height="22px">
+    <se-spin-input size="2" id="blur" min=0 max=100 step=5 src="blur.svg" title="模糊度"></se-spin-input>
+    <se-list id="tool_position" title="对齐到页面" label="" width="22px" height="22px">
+      <se-list-item id="tool_posleft" value="l" title="左对齐" src="align_left.svg" img-height="22px">
       </se-list-item>
-      <se-list-item id="tool_poscenter" value="c" title="tools.align_center" src="align_center.svg"
+      <se-list-item id="tool_poscenter" value="c" title="居中对齐" src="align_center.svg"
         img-height="22px"></se-list-item>
-      <se-list-item id="tool_posright" value="r" title="tools.align_right" src="align_right.svg"
+      <se-list-item id="tool_posright" value="r" title="右对齐" src="align_right.svg"
         img-height="22px"></se-list-item>
-      <se-list-item id="tool_postop" value="t" title="tools.align_top" src="align_top.svg" img-height="22px">
+      <se-list-item id="tool_postop" value="t" title="顶端对齐" src="align_top.svg" img-height="22px">
       </se-list-item>
-      <se-list-item id="tool_posmiddle" value="m" title="tools.align_middle" src="align_middle.svg"
+      <se-list-item id="tool_posmiddle" value="m" title="水平居中对齐" src="align_middle.svg"
         img-height="22px"></se-list-item>
-      <se-list-item id="tool_posbottom" value="b" src="align_bottom.svg" title="tools.align_bottom"
+      <se-list-item id="tool_posbottom" value="b" src="align_bottom.svg" title="底端对齐"
         img-height="22px"></se-list-item>
-      <se-list-item id="tool_poshoriz" value="dh" src="align_distrib_horiz.svg" title="tools.align_distrib_horiz"
+      <se-list-item id="tool_poshoriz" value="dh" src="align_distrib_horiz.svg" title="水平分布"
         img-height="22px"></se-list-item>
-      <se-list-item id="tool_posverti" value="dv" src="align_distrib_verti.svg" title="tools.align_distrib_verti"
+      <se-list-item id="tool_posverti" value="dv" src="align_distrib_verti.svg" title="垂直分布"
         img-height="22px"></se-list-item>
     </se-list>
   </div>
   <div class="xy_panel">
-    <se-spin-input id="selected_x" data-attr="x" size="4" type="text" label="properties.x_label"
-      title="properties.pos_x">
+    <se-spin-input id="selected_x" data-attr="x" size="4" type="text" label="X坐标"
+      title="X坐标">
     </se-spin-input>
-    <se-spin-input id="selected_y" data-attr="y" size="4" type="text" label="properties.y_label"
-      title="properties.pos_y">
+    <se-spin-input id="selected_y" data-attr="y" size="4" type="text" label="Y坐标"
+      title="Y坐标">
     </se-spin-input>
   </div>
   <!-- Buttons when multiple elements are selected -->
   <div class="multiselected_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_clone_multi" title="tools.clone" shortcut="C" src="clone.svg"></se-button>
-    <se-button id="tool_delete_multi" title="tools.del" shortcut="Delete/Backspace" src="delete.svg"></se-button>
+    <se-button id="tool_clone_multi" title="克隆" shortcut="C" src="clone.svg"></se-button>
+    <se-button id="tool_delete_multi" title="删除" shortcut="Delete/Backspace" src="delete.svg"></se-button>
   </div>
   <div class="multiselected_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_group_elements" title="tools.group_elements" shortcut="G" src="group_elements.svg">
+    <se-button id="tool_group_elements" title="组合元素" shortcut="G" src="group_elements.svg">
     </se-button>
-    <se-button id="tool_make_link_multi" title="tools.make_link" src="globe_link.svg"></se-button>
-    <se-button id="tool_align_left" title="tools.align_left" src="align_left.svg"></se-button>
-    <se-button id="tool_align_center" title="tools.align_center" src="align_center.svg"></se-button>
-    <se-button id="tool_align_right" title="tools.align_right" src="align_right.svg"></se-button>
-    <se-button id="tool_align_top" title="tools.align_top" src="align_top.svg"></se-button>
-    <se-button id="tool_align_middle" title="tools.align_middle" src="align_middle.svg"></se-button>
-    <se-button id="tool_align_bottom" title="tools.align_bottom" src="align_bottom.svg"></se-button>
-    <se-button id="tool_align_distrib_horiz" title="tools.align_distrib_horiz"
+    <se-button id="tool_make_link_multi" title="创建链接" src="globe_link.svg"></se-button>
+    <se-button id="tool_align_left" title="左对齐" src="align_left.svg"></se-button>
+    <se-button id="tool_align_center" title="居中对齐" src="align_center.svg"></se-button>
+    <se-button id="tool_align_right" title="右对齐" src="align_right.svg"></se-button>
+    <se-button id="tool_align_top" title="顶端对齐" src="align_top.svg"></se-button>
+    <se-button id="tool_align_middle" title="水平居中对齐" src="align_middle.svg"></se-button>
+    <se-button id="tool_align_bottom" title="底端对齐" src="align_bottom.svg"></se-button>
+    <se-button id="tool_align_distrib_horiz" title="水平分布"
       src="align_distrib_horiz.svg"></se-button>
-    <se-button id="tool_align_distrib_verti" title="tools.align_distrib_verti"
+    <se-button id="tool_align_distrib_verti" title="垂直分布"
       src="align_distrib_verti.svg"></se-button>
-    <se-select id="tool_align_relative" label="tools.relativeTo"
-      options="tools.selected_objects,tools.largest_object,tools.smallest_object,tools.page"
+    <se-select id="tool_align_relative" label="相对对齐"
+      options="选中的对象,最大的对象,最小的对象,页面"
       values="selected::largest::smallest::page">
       </se-list-item>
     </se-select>
   </div> <!-- multiselected_panel -->
   <div class="rect_panel">
-    <se-spin-input id="rect_width" data-attr="width" size="4" label="properties.w_label"
-      title="properties.rect_width"></se-spin-input>
-    <se-spin-input id="rect_height" data-attr="height" size="4" label="properties.h_label"
-      title="properties.rect_height"></se-spin-input>
-    <se-spin-input id="rect_rx" min=0 max=1000 step=1 size="3" title="properties.corner_radius"
+    <se-spin-input id="rect_width" data-attr="width" size="4" label="宽度"
+      title="矩形宽度"></se-spin-input>
+    <se-spin-input id="rect_height" data-attr="height" size="4" label="高度"
+      title="矩形高度"></se-spin-input>
+    <se-spin-input id="rect_rx" min=0 max=1000 step=1 size="3" title="圆角半径"
       data-attr="Corner Radius" src="c_radius.svg"></se-spin-input>
   </div> <!-- rect_panel -->
   <div class="image_panel">
-    <se-spin-input id="image_width" data-attr="width" size="4" type="text" label="properties.w_label"
-      title="properties.image_width"></se-spin-input>
-    <se-spin-input id="image_height" data-attr="height" size="4" type="text" label="properties.h_label"
-      title="properties.image_height"></se-spin-input>
+    <se-spin-input id="image_width" data-attr="width" size="4" type="text" label="宽度"
+      title="图像宽度"></se-spin-input>
+    <se-spin-input id="image_height" data-attr="height" size="4" type="text" label="高度"
+      title="图像高度"></se-spin-input>
   </div>
   <div class="image_panel">
-    <se-input id="image_url" data-attr="image_url" size="15" label="properties.image_url"></se-input>
+    <se-input id="image_url" data-attr="image_url" size="15" label="图像URL"></se-input>
   </div>
   <div class="circle_panel">
-    <se-spin-input id="circle_cx" data-attr="cx" size="4" label="properties.cx_label"></se-spin-input>
-    <se-spin-input id="circle_cy" data-attr="cy" size="4" label="properties.cy_label"></se-spin-input>
+    <se-spin-input id="circle_cx" data-attr="cx" size="4" label="圆心X"></se-spin-input>
+    <se-spin-input id="circle_cy" data-attr="cy" size="4" label="圆心Y"></se-spin-input>
   </div>
   <div class="circle_panel">
-    <se-spin-input id="circle_r" data-attr="r" size="4" label="properties.r_label"></se-spin-input>
+    <se-spin-input id="circle_r" data-attr="r" size="4" label="半径"></se-spin-input>
   </div>
   <div class="ellipse_panel">
-    <se-spin-input id="ellipse_cx" data-attr="cx" size="4" title="properties.ellipse_cx"
-      label="properties.cx_label"></se-spin-input>
-    <se-spin-input id="ellipse_cy" data-attr="cy" size="4" title="properties.ellipse_cy"
-      label="properties.cy_label"></se-spin-input>
+    <se-spin-input id="ellipse_cx" data-attr="cx" size="4" title="椭圆圆心X"
+      label="圆心X"></se-spin-input>
+    <se-spin-input id="ellipse_cy" data-attr="cy" size="4" title="椭圆圆心Y"
+      label="圆心Y"></se-spin-input>
   </div>
   <div class="ellipse_panel">
-    <se-spin-input id="ellipse_rx" data-attr="rx" size="4" title="properties.ellipse_rx"
-      label="properties.rx_label"></se-spin-input>
-    <se-spin-input id="ellipse_ry" data-attr="ry" size="4" title="properties.ellipse_ry"
-      label="properties.ry_label"></se-spin-input>
+    <se-spin-input id="ellipse_rx" data-attr="rx" size="4" title="椭圆X半径"
+      label="X半径"></se-spin-input>
+    <se-spin-input id="ellipse_ry" data-attr="ry" size="4" title="椭圆Y半径"
+      label="Y半径"></se-spin-input>
   </div>
   <div class="line_panel">
-    <se-spin-input id="line_x1" data-attr="x1" size="4" title="properties.line_x1" label="properties.x1_label">
+    <se-spin-input id="line_x1" data-attr="x1" size="4" title="起点X" label="起点X">
     </se-spin-input>
-    <se-spin-input id="line_y1" data-attr="y1" size="4" title="properties.line_y1" label="properties.y1_label">
+    <se-spin-input id="line_y1" data-attr="y1" size="4" title="起点Y" label="起点Y">
     </se-spin-input>
-    <se-spin-input id="line_x2" data-attr="x2" size="4" title="properties.line_x2" label="properties.x2_label">
+    <se-spin-input id="line_x2" data-attr="x2" size="4" title="终点X" label="终点X">
     </se-spin-input>
-    <se-spin-input id="line_y2" data-attr="y2" size="4" title="properties.line_y2" label="properties.y2_label">
+    <se-spin-input id="line_y2" data-attr="y2" size="4" title="终点Y" label="终点Y">
     </se-spin-input>
   </div>
   <div class="text_panel">
     <!-- Text styles -->
-    <se-button id="tool_bold" title="properties.bold" src="bold.svg" shortcut="B"></se-button>
-    <se-button id="tool_italic" title="properties.italic" src="italic.svg" shortcut="I"></se-button>
-    <se-button id="tool_text_decoration_underline" title="properties.text_decoration_underline"
+    <se-button id="tool_bold" title="粗体" src="bold.svg" shortcut="B"></se-button>
+    <se-button id="tool_italic" title="斜体" src="italic.svg" shortcut="I"></se-button>
+    <se-button id="tool_text_decoration_underline" title="下划线"
       src="text_decoration_underline.svg"></se-button>
-    <se-button id="tool_text_decoration_linethrough" title="properties.text_decoration_linethrough"
+    <se-button id="tool_text_decoration_linethrough" title="删除线"
       src="text_decoration_linethrough.svg"></se-button>
-    <se-button id="tool_text_decoration_overline" title="properties.text_decoration_overline"
+    <se-button id="tool_text_decoration_overline" title="上划线"
       src="text_decoration_overline.svg"></se-button>
 
     <!-- Font Size-->
-    <se-select id="tool_font_family" label="properties.font_family_label"
-      options="properties.serif,properties.sans_serif,properties.cursive,properties.fantasy,properties.monospace,properties.courier,properties.helvetica,properties.times"
+    <se-select id="tool_font_family" label="字体"
+      options="衬线字体,无衬线字体,手写体,装饰字体,等宽字体,Courier,Helvetica,Times"
       values="Serif::Sans-serif::Cursive::Fantasy::Monospace::Courier::Helvetica::Times"></se-select>
-    <se-spin-input size="2" id="font_size" min=1 max=1000 step=1 title="properties.font_size"
+    <se-spin-input size="2" id="font_size" min=1 max=1000 step=1 title="字体大小"
       src="fontsize.svg"></se-spin-input>
 
     <!-- Text Anchor -->
     <se-list id="tool_text_anchor" label="" width="22px" height="22px">
-      <se-list-item id="tool_text_anchor_start" value="start" title="properties.text_anchor_start"
+      <se-list-item id="tool_text_anchor_start" value="start" title="左对齐"
         src="anchor_start.svg" img-height="25px"></se-list-item>
-      <se-list-item id="tool_text_anchor_middle" value="middle" title="properties.text_anchor_middle"
+      <se-list-item id="tool_text_anchor_middle" value="middle" title="居中对齐"
         src="anchor_middle.svg" img-height="25px"></se-list-item>
-      <se-list-item id="tool_text_anchor_end" value="end" title="properties.text_anchor_end" src="anchor_end.svg"
+      <se-list-item id="tool_text_anchor_end" value="end" title="右对齐" src="anchor_end.svg"
         img-height="25px"></se-list-item>
     </se-list>
 
     <!-- Letter Spacing -->
-    <se-spin-input size="2" id="tool_letter_spacing" min=0 max=100 step=1 title="properties.text_letter_spacing"
+    <se-spin-input size="2" id="tool_letter_spacing" min=0 max=100 step=1 title="字母间距"
       src="letter_spacing.svg"></se-spin-input>
 
     <!-- Word Spacing -->
-    <se-spin-input size="2" id="tool_word_spacing" min=0 max=1000 step=1 title="properties.text_word_spacing"
+    <se-spin-input size="2" id="tool_word_spacing" min=0 max=1000 step=1 title="单词间距"
       src="word_spacing.svg"></se-spin-input>
 
     <!-- Text Length -->
-    <se-spin-input size="2" id="tool_text_length" min=0 max=1000 step=1 title="properties.text_length"
+    <se-spin-input size="2" id="tool_text_length" min=0 max=1000 step=1 title="文本长度"
       src="text_length.svg"></se-spin-input>
 
     <!-- Length Adjust -->
-    <se-select id="tool_length_adjust" label="properties.text_length_adjust"
-      options="properties.text_length_adjust_spacing,properties.text_length_adjust_spacing_and_glyphs"
+    <se-select id="tool_length_adjust" label="长度调整"
+      options="间距,间距和字形"
       values="spacing::spacingAndGlyphs"></se-select>
   </div>
   <!-- Not visible, but still used -->
   <input id="text" type="text" size="35" />
   <div class="container_panel">
     <div class="tool_sep"></div>
-    <se-input id="g_title" data-attr="title" size="8" label="properties.label"></se-input>
+    <se-input id="g_title" data-attr="title" size="8" label="标签"></se-input>
   </div> <!-- container_panel -->
   <div class="use_panel">
-    <se-button id="tool_unlink_use" title="tools.tool_unlink_use" src="unlink_use.svg"></se-button>
+    <se-button id="tool_unlink_use" title="断开连接" src="unlink_use.svg"></se-button>
   </div> <!-- use_panel -->
   <div class="g_panel">
-    <se-button id="tool_ungroup" title="tools.ungroup" src="ungroup.svg"></se-button>
+    <se-button id="tool_ungroup" title="取消组合" src="ungroup.svg"></se-button>
   </div> <!-- g_panel -->
   <!-- For anchor elements -->
   <div class="a_panel">
@@ -205,18 +205,18 @@
   </div> <!-- a_panel -->
   <div class="path_node_panel">
     <div class="tool_sep"></div>
-    <se-button id="tool_node_link" title="tools.node_link" src="tool_node_link.svg" pressed></se-button>
+    <se-button id="tool_node_link" title="连接控制点" src="tool_node_link.svg" pressed></se-button>
     <div class="tool_sep"></div>
-    <se-spin-input id="path_node_x" data-attr="x" size="4" title="properties.node_x" label="properties.x_label">
+    <se-spin-input id="path_node_x" data-attr="x" size="4" title="节点X" label="X坐标">
     </se-spin-input>
-    <se-spin-input id="path_node_y" data-attr="y" size="4" title="properties.node_y" label="properties.y_label">
+    <se-spin-input id="path_node_y" data-attr="y" size="4" title="节点Y" label="Y坐标">
     </se-spin-input>
-    <se-select id="seg_type" title="properties.seg_type" label=""
-      options="properties.straight_segments,properties.curve_segments" values="4::6"></se-select>
-    <se-button id="tool_node_clone" title="tools.node_clone" src="tool_node_clone.svg"></se-button>
-    <se-button id="tool_node_delete" title="tools.node_delete" src="tool_node_delete.svg"></se-button>
-    <se-button id="tool_openclose_path" title="tools.openclose_path" src="tool_openclose_path.svg"></se-button>
-    <se-button id="tool_add_subpath" title="tools.add_subpath" src="tool_add_subpath.svg"></se-button>
+    <se-select id="seg_type" title="线段类型" label=""
+      options="直线,曲线" values="4::6"></se-select>
+    <se-button id="tool_node_clone" title="克隆节点" src="tool_node_clone.svg"></se-button>
+    <se-button id="tool_node_delete" title="删除节点" src="tool_node_delete.svg"></se-button>
+    <se-button id="tool_openclose_path" title="打开/关闭路径" src="tool_openclose_path.svg"></se-button>
+    <se-button id="tool_add_subpath" title="添加子路径" src="tool_add_subpath.svg"></se-button>
   </div> <!-- path_node_panel -->
   <div id="cur_context_panel"></div>
 </div>
