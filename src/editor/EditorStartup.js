@@ -336,6 +336,16 @@ class EditorStartup {
       }
     })
 
+    // 添加Alt+滚轮缩放功能
+    this.workarea.addEventListener('wheel', (e) => {
+      if (e.altKey) {
+        e.preventDefault()
+        this.svgCanvas.setZoom(e.deltaY > 0 ? this.svgCanvas.getZoom() * 0.9 : this.svgCanvas.getZoom() * 1.1, true)
+        this.updateCanvas(true)
+        $id('zoom').value = (this.svgCanvas.getZoom() * 100).toFixed(1)
+      }
+    })
+
     window.addEventListener('mouseup', (evt) => {
       this.enableToolCancel = true
       if (evt.button === 1) {
